@@ -155,3 +155,5 @@ if __name__ == '__main__':
     main(args)
     wandb.save('/opt/ml/code/trained_models/latest.pth')
     wandb.finish()
+    
+    print('test')
