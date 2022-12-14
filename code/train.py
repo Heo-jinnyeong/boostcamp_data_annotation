@@ -25,8 +25,8 @@ wandb.init(
     name='base',
     config={
         'lr': 0.001,
-        'batch_size':12,
-        'epoch':4,
+        'batch_size':32,
+        'epoch':120,
         'seed': 42
     }
 )
@@ -50,7 +50,7 @@ def parse_args():
     parser.add_argument('--data_dir', type=str,
                         default=os.environ.get('SM_CHANNEL_TRAIN', '/opt/ml//input/data/ICDAR17_Korean'))
     parser.add_argument('--model_dir', type=str, default=os.environ.get('SM_MODEL_DIR',
-                                '/opt/ml/level2_dataannotation_cv-level2-cv-03/code/trained_models'))
+                                '/opt/ml/code/trained_models'))
 
     parser.add_argument('--device', default='cuda' if cuda.is_available() else 'cpu')
     parser.add_argument('--num_workers', type=int, default=4)   
@@ -155,7 +155,7 @@ def main(args):
 if __name__ == '__main__':
     args = parse_args()
     main(args)
-    wandb.save('/opt/ml/code/trained_models/latest.pth')
+    wandb.save('/opt/ml/level2_dataannotation_cv-level2-cv-03/code/trained_models/latest.pth')
     wandb.finish()
     
     print('test')
