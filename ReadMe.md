@@ -1,3 +1,5 @@
+## [wrap-up report https://velog.io/@on_board/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%9C%EC%9E%91-%EB%8C%80%ED%9A%8C-Wrap-up]
+
 ![header](https://capsule-render.vercel.app/api?type=rect&color=gradient&text=데이터%20제작%20프로젝트%20&fontSize=45)
 <div align="left">
 	<img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=Python&logoColor=white" />
