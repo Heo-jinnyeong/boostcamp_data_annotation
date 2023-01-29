@@ -218,5 +218,7 @@ def main(args):
 if __name__ == '__main__':
     args = parse_args()
     main(args)
-    wandb.save('/opt/ml/code/trained_models/latest.pth')
+    wandb.save('/opt/ml/level2_dataannotation_cv-level2-cv-03/code/trained_models/latest.pth')
     wandb.finish()
+    
+    print('test')
